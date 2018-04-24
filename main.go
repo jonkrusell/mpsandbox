@@ -82,7 +82,7 @@ func updatePlayer(GUID string, point models.Point) {
 
 func initializeHost() {
 	e := echo.New()
-	e.Static("/", "world-web-angular/dist")
+	e.Static("/", "mpsandbox-web/dist")
 	e.Logger.Fatal(e.Start(":8080"))
 }
 
